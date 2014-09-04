@@ -1,0 +1,32 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "math.h"
+#include "conio.h"
+
+using namespace std;
+
+
+int main()
+{	
+	float A, B, C, Y, X1, X2;
+	cout<<"ingrese el valorw3 es para A B C" <<endl;
+	cin>> A;
+	cin>> B;
+	cin>> C;
+	Y = pow(B,2)- 4*A*C;
+	if (Y > 0)
+		{
+			X1 = (-B + sqrt (Y))/(2*A);
+			X2 = (-B - sqrt (Y))/(2*A);
+			cout<<X1<<endl;
+			cout<<X2<<endl;
+		}
+	else 
+		cout<<"no son raices reales"<<endl;
+	getch ();
+	return 0;
+}
+
+
+
