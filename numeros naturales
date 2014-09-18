@@ -1,0 +1,24 @@
+// numeronaturales.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+int main()
+{int n, i;
+cout<<"hasta que numero desea llegar"<<endl;
+cin>>n;
+cout<<"los numeros son:"<<endl;
+for(i=1; i<=n; i++)
+{	
+	cout<<i<<endl;
+}
+getch();
+
+	return 0;
+}
+
