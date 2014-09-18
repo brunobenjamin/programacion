@@ -1,0 +1,22 @@
+// primerospares.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main()
+{int n,i;
+cout<<"hasta que valor desea llegar"<<endl;
+cin>>n;
+cout<<"los valores son:"<<endl;
+	for(i=1;i<=2*n;i++)
+			{if(i%2==0)
+			{cout<<i<<endl;
+			}
+	
+		}
+	return 0;
+}
