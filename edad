@@ -1,0 +1,13 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include <iostream>
+using namespace std;
+void main ()
+{
+int edad;
+cin >> edad;
+cout << "su edad es: " ;
+cout << edad;
+getch ();
+}
