@@ -1,0 +1,76 @@
+// menu.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "stdlib.h"
+#include "math.h"
+using namespace std;
+
+void main()
+{int opcion, n,i,s,p,a,b,c,d,e,f,x,y,area,sp,j,k,l;
+do
+{
+cout<< "\t MENU"<<endl;
+cout<< "1. serie"<<endl;
+cout<< "2. ecuacion"<<endl;
+cout<< "3. area de un rectangulo"<<endl;
+cout<< "0. salir"<<endl;
+cin>>opcion;
+	switch(opcion)
+	{
+	case 1: cout<< "\t serie"<<endl;
+			cout<<"hasta que numero desea llegar"<<endl;
+			cin>>n;
+			s=0;
+			i=1;
+			p=1;
+				while(i<=n)
+				{
+					if(p=1)
+					{
+						s=i;
+						p=2;
+						cout<<i<<endl;
+					}
+					else
+					{
+						s=i;
+						p=1;
+						cout<<i*-1<<endl;
+					}
+					i=i+2;
+					
+				}
+
+			getch();
+			break;
+	case 2: cout<< "\t ecuacion"<<endl;
+			cout<< "de valores en orden"<<endl;
+			cin>>a;
+			cin>>b;
+			cin>>c;
+			cin>>d;
+			cin>>e;
+			cin>>f;
+			x=(c*e - f*b)/(a*e - b*d);
+			y=(a*f - d*b)/(a*e - b*d);
+			cout<<"x="<<x<<endl;
+			cout<<"y="<<y<<endl;
+			getch();
+			break;
+
+	case 3:
+			sp=(j+k+l)/2;
+			area= pow(sp*(sp-j)*(sp-k)*(sp-l)*0.5);
+
+
+		
+	}
+}
+while(opcion!=0);
+getch();
+
+}
+
