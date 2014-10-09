@@ -1,0 +1,23 @@
+// programa 3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+int x,n,i,s;
+cout<<"digite hasta que numero desea elevar"<<endl;
+cin>>n;
+cout<<"digite el numero base"<<endl;
+cin>>x;
+s=0;
+for(i=0; i<n; i++)
+{s=powf(x,i)+s;
+}
+cout<<s;
+getch();
+}
