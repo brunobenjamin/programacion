@@ -1,0 +1,20 @@
+//programa de factoria 1*2*3*4*5...*n
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+int x,n,i;
+cout<<"digite hasta que numero desea multiplicar"<<endl;
+cin>>n;
+x=1;
+for(i=1; i<=n; i++)
+{x=x*i;
+}
+cout<<x<<endl;
+getch();
+}
