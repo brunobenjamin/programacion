@@ -1,0 +1,64 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define tam 100
+using namespace std;
+
+void leer_vector (int edad[], int n);
+void mostrar_vector (int edad[], int n);
+void ordernar_vector (int edad[], int n);
+bool validar_rango (int e, int ri, int rf);
+void main()
+{int ed[tam],n,e,rf,ri;
+do{
+	cout<<"Ingrese el tamaño del vector";
+    cin>>n;
+}while(n<=0 || n>100);
+leer_vector (ed,n);
+mostrar_vector ( ed, n);
+cout<<"Edades no clasificadas"<<endl;
+ordernar_vector (ed, n);
+mostrar_vector ( ed, n);
+getch();
+}
+void leer_vector (int edad[], int n)
+{bool flag;
+	cout<<"Ingrese las edades";
+	
+     for(int i=0;i<n;i++)
+     { do{
+		 cin>>edad[i];
+     flag= validar_rango (edad[i],1,150);
+      }while(!flag);
+	 }
+   
+}
+void mostrar_vector (int edad[], int n)
+{  for(int i=0;i<n;i++)
+    cout<<"["<<i<<"]="<<edad[i]<<endl;
+     
+
+
+}
+void ordernar_vector (int edad[], int n)
+{int aux,i,j;
+for(i=0;i<n;i++)
+{
+   for(j=0;j<n;j++)
+    {  if(edad[i]<edad[j])
+       {
+	    aux=edad[i];
+        edad[i]=edad[j];
+	    edad[j]=aux;
+         
+        }
+     }
+}
+}
+bool validar_rango (int e, int ri, int rf)
+{ if((ri<=e)&&(rf>=e))
+    return true;
+  else
+    return false;
+    
+}
